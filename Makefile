@@ -15,4 +15,7 @@ clean:
 lint:
 	pep8 --show-source --show-pep8 ./*.py
 
+freeze:
+		pip freeze > requirements.txt
+
 init: deps clean
