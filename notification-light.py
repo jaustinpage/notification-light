@@ -30,7 +30,7 @@ def _configure_logging(log_level=logging.WARNING):
 
 def light_red():
     try:
-        subprocess.check_output(['/home/aust9600/github/notification-light/blink1/commandline/blink1-tool', '--red'])
+        subprocess.check_output(['/home/jaustinpage/github/blink1/commandline/blink1-tool', '--red'])
     except subprocess.CalledProcessError as err:
         stacktrace = traceback.format_exc(sys.exc_info())
         logging.debug('Exception in light_red() calling blink1-tool. Stacktrace:\n%s' % stacktrace)
@@ -38,7 +38,7 @@ def light_red():
 
 def light_off():
     try:
-        subprocess.check_output(['/home/aust9600/github/notification-light/blink1/commandline/blink1-tool', '--off'])
+        subprocess.check_output(['/home/jaustinpage/github/blink1/commandline/blink1-tool', '--off'])
     except subprocess.CalledProcessError as err:
         stacktrace = traceback.format_exc(sys.exc_info())
         logging.debug('Exception in light_off() calling blink1-tool. Stacktrace:\n%s' % stacktrace)
